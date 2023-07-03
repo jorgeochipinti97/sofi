@@ -114,10 +114,10 @@ export default function Home() {
       <Box sx={{ backgroundColor: 'white', height: '100vh', textAlign: 'center', mt: 5, lineHeight: '30px', mx: 2 }} className='containerImageFive'>
         <Typography variant='body1' sx={{ fontWeight: 300, fontWeight: 500, fontSize: '40px', transform: 'scale(0)' }} className='scaleAnimationTwo'> Por eso y muchas otras cosas me encantas</Typography>
         <Box display='flex' flexDirection='column' alignItems={'center'}  justifyContent={'center'} sx={{ width: '100vw', transform: 'scale(0)' }} className='scaleAnimationTwo'>
-          <Box sx={{ mt: 3, width: '30%' }}>
+          <Box sx={{ mt: 3, width:  '50'}}>
             <Lottie animationData={animation4} loop={true} />
           </Box>
-          <Box sx={{ mt: 3, width: '30%' }}>
+          <Box sx={{ mt: 3, width: '50'}}>
             <Lottie animationData={animation2} loop={true} />
           </Box>
         </Box>
