@@ -77,7 +77,7 @@ export default function Home() {
       delay: 19, opacity: 0, ease: Power1.easeOut
     })
     gsap.to('.containerImageFive', {
-      delay: 20.5, display:'none'
+      delay: 20.5, display: 'none'
     })
     gsap.to('.scaleAnimationThree', {
       delay: 21, opacity: 1, ease: Power1.easeOut
@@ -113,20 +113,22 @@ export default function Home() {
       </Box>
       <Box sx={{ backgroundColor: 'white', height: '100vh', textAlign: 'center', mt: 5, lineHeight: '30px', mx: 2 }} className='containerImageFive'>
         <Typography variant='body1' sx={{ fontWeight: 300, fontWeight: 500, fontSize: '40px', transform: 'scale(0)' }} className='scaleAnimationTwo'> Por eso y muchas otras cosas me encantas</Typography>
-        <Box display='flex' flexDirection='column' justifyContent={'center'} sx={{ width: '100vw', transform: 'scale(0)' }} className='scaleAnimationTwo'>
-          <Box sx={{ mt: 3 }}>
+        <Box display='flex' flexDirection='column' alignItems={'center'}  justifyContent={'center'} sx={{ width: '100vw', transform: 'scale(0)' }} className='scaleAnimationTwo'>
+          <Box sx={{ mt: 3, width: '30%' }}>
             <Lottie animationData={animation4} loop={true} />
           </Box>
-          <Lottie animationData={animation2} loop={true} />
+          <Box sx={{ mt: 3, width: '30%' }}>
+            <Lottie animationData={animation2} loop={true} />
+          </Box>
         </Box>
       </Box >
-      <Box sx={{ backgroundColor: 'white', height: '100vh',alignContent:'center', textAlign: 'center', mt: 5, lineHeight: '30px', mx: 2 }} >
+      <Box sx={{ backgroundColor: 'white', height: '100vh', alignContent: 'center', textAlign: 'center', mt: 5, lineHeight: '30px', mx: 2 }} >
         <Typography variant='body1' sx={{ fontWeight: 300, fontWeight: 500, fontSize: '24px', opacity: 0 }} className='scaleAnimationThree'> Equivocarse es parte del proceso, lo importante es disfrutar el camino</Typography>
         <Box display='flex' flexDirection='column' justifyContent={'center'} sx={{ width: '100vw', opacity: 0 }} className='scaleAnimationThree'>
           <Box sx={{ mt: 3 }}>
             <Lottie animationData={animation6} loop={true} />
           </Box>
-          
+
         </Box>
       </Box >
     </>
